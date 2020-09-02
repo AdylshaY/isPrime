@@ -1,0 +1,26 @@
+public class MyClass {
+    public static void main(String args[]) {
+        
+        int number = 5;     // You can change this number.
+        int count = 0;
+        
+        if (number < 2){
+            System.out.println("The smallest prime number is 2.");
+        } else {
+            for (int i = 1; i <= number; i++){
+                int remaining = number % i;
+                if (remaining == 0){
+                    count++;
+                }
+            }
+            
+            if (count == 2){
+                System.out.println("Number is prime.");
+            } else {
+                System.out.println("Number is not prime.");
+            }
+            
+        }
+        
+    }
+}
